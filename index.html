@@ -38,6 +38,8 @@
 			<div class="slides">
 				<section>
 					<h1>A Responsive Image Container</h1>
+                    <a href="https://twitter.com/yoavweiss">Yoav Weiss</a>
+                    <p>Responsive Images Meet-up - Paris, September 2013</p>
 				</section>
                 <section style="background: url(resources/unicorn.jpg);background-size: 100%; height: 600px;">
                     <h1 style="padding-left: 150px;color:#CC29CC">AKA: The "magical" image format</h1>
@@ -150,12 +152,61 @@
                     </ul>
                 </section>
                 <section>
-                    <h3>Attribution</h3>
+                    <h2>Questions?</h2>
+                </section>
+                <section>
+                    <section>
+                        <h2>Now to something completely different</h2>
+                    </section>
+                    <section>
+                        <h2>While I'm here</h2>
+                        <img src="resources/suspect_nothing.jpg">
+                    </section>
+                    <section>
+                        <h2>Let's talk about srcset's future</h2>
+                    </section>
+                    <section>
+                        <h3>Current implementation</h3>
+                        <code>
+                            &lt;img src="cat.1X.jpg" <br/>
+                                srcset="cat.1x.jpg 1x, cat.2x.jpg 2x"&gt;
+                        </code>
+                    </section>
+                    <section>
+                        <h3>Suggested resolution switching qualifiers</h3>
+                        <code>
+                            &lt;img src="cat.1X.jpg" <br/>
+                            srcset="cat.1x.jpg 1x 320w, <br>cat.2x.jpg 2x 320w, <br>cat.2x.jpg 1x 640w, <br>cat.4x.jpg 2x 640w, <br>cat 4x.jpg 1x 1280w"&gt;
+                        </code>
+                    </section>
+                    <section>
+                        <h2>Web dev's response to this</h2>
+                        <img src="resources/no2.gif">
+                    </section>
+                    <section>
+                        <h3>My proposal</h3>
+                        <p>
+                        Define a new qualifier as a multiple of a "base viewport" and DPR
+                        </p>
+                        <code>
+                            &lt;img src="cat.1X.jpg" <br/>
+                            srcset="cat.1x.jpg 1m, <br>cat.2x.jpg 2m, <br>cat.4x.jpg 4m"&gt;
+                        </code>
+                    </section>
+                    <section>
+                        Same can be mirrored with CH
+                    </section>
+                </section>
+                <section>
+                    <h1>Thanks!</h1>
+                    <div style="text-decoration: underline; margin-top: 100px;">Attribution</div>
                     <ul>
                         <li><a href="http://www.flickr.com/photos/in2thewoodz9/4236191192/sizes/o/in/photolist-7skA4b-9m7M7g-9m7LTz-9m7LXZ-9maQYq-8NKxNT-d83xcs-9zrPcY-dZmbx9-cnJJiN-ammXyA-ammXZL-8JHtXt-eFb8rS-eF536c-d8kCBq-acjj4V-8j3BGv-dhpMVx-8bEz5b-eF59j6-eF58yD-eF4YL4-eF57JH-eF54dP-7FDeXS-9kWWFf-9F9dTi-cih8kj-eF56ci-9PqJAf-dHrAt6-9maRcs-9ctXao-7CV844-ddZTL3-9GYEUn-9m67qa-cCZyFY-acn6X5-a7jqbU-a7gsma-a7jooq-a7gzd2-ciDY73-a3swMF-c5CeEq-acn971-acjhUZ-ahtbSj-9p3WbG/">Unicorn</a></li>
+                        <li>Everything else - <a href="https://twitter.com/wilto">@wilto</a> and <a
+                            href="https://twitter.com/beep">@beep</a></li>
                     </ul>
                 </section>
-
+                <!--
 				<section>
 					<h2>Heads Up</h2>
 					<p>
@@ -168,7 +219,6 @@
 					</aside>
 				</section>
 
-				<!-- Example of nested vertical slides -->
 				<section>
 					<section>
 						<h2>Vertical Slides</h2>
@@ -454,6 +504,7 @@ function linkify( selector ) {
 					<h1>THE END</h1>
 					<h3>BY Hakim El Hattab / hakim.se</h3>
 				</section>
+                -->
 
 			</div>
 
